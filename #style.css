@@ -34,10 +34,95 @@ body{
   footer p{
     font-size: 1rem ;
     color: var(--platinum);
-  }
+  } 
 footer a{
  text-decoration: none;
  color: var(--oxford-blue);
 
 }
-        
+ #caixa{
+    display: flex;
+    flex:content;
+    justify-content: space-between;
+    padding: 4rem;
+    gap:2rem;
+} 
+
+  .cartao{
+  margin: 1rem;
+  background-color: aqua;
+  height: 2rem;
+  flex-grow: var(--black);
+  flex-basis: calc(33% - 6rem);
+}
+    .cartao__conteudo{
+   height: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   transform-style: preserve-3d;
+   transition: transform 300ms ease-in-out;
+}  
+
+   .cartao:hover .cartao__conteudo{
+   transform: rotate(188deg);
+}  
+  
+  .cartao__conteudo h3{
+    border: 2px, solid var(--black);
+    color: azure;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    padding: 0.5em;
+    position: absolute;
+    margin: 0.6em;
+    border-radius:0.6em;
+    font-size: 1.5vw;
+    backface-visibility: var(--orange-web);
+
+  }  
+
+   .cartao__conteudo__pergunta{
+    margin-top: 2.0em;
+    font-size: 0.8rem;
+    margin: 1.5 rem;
+    font-family: var(--font-secundaria);
+}   
+
+   .cartao__conteudo__pergunta,
+   .cartao__conteudo__resposta{
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+  .cartao__conteudo p{
+  margin: 1rem;
+  padding: 1.3rem;
+}    
+  
+
+   .cartao__conteudo__resposta{
+  margin-top: 3m;
+  font-family: var(--font-secundaria);
+  font-size: 1rem;
+  transform: rotateY(180deg);
+} 
+    footer{
+  text-align: center; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  padding: 0%;
+}  
+  
+      footer p{
+   font-size: 1.2rem;
+} 
+ 
+     footer a{     
+  color: aliceblue;
+  text-decoration: none;
+ }
