@@ -17,6 +17,7 @@
     --Cor4: #111111;
     --COr5: #4a5158fb;
    --Cor6: #ffffff;
+   --cor7: #000000;
 
 
 }
@@ -56,7 +57,7 @@ body {
 
 }
 .cartao__conteudo h3 {
-    border: 2px, solid var(--Cor4);
+    border: 2px, solid var(--cor7);
     color: var(--Cor4);
     font-family: var(--fonte-secundaria);
     text-align: center;
@@ -97,6 +98,7 @@ body {
 }
 
 footer {
+  font-family: var(--fonte-secundaria);
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -110,6 +112,6 @@ footer p {
 }
 
 footer a {
-    color: var(--Cor1);
+    color: var(--cor7);
     text-decoration: none;
 }
